@@ -17,7 +17,6 @@ class City():
     def __repr__(self):
         return f"City({repr(self.name)}, {repr(self.lat)}, {repr(self.lon)})"
 
-
     # We have a collection of US cities with population over 750,000 stored in the
     # file "cities.csv". (CSV stands for "comma-separated values".)
     #
@@ -81,6 +80,8 @@ for c in cities:
 # Salt Lake City: (40.7774,-111.9301)
 
 # TODO Get latitude and longitude values from the user
+input1 = input("Enter lat1,lon1: ").split(',')
+input2 = input("Enter lat2,lon2: ").split(',')
 
 
 def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
